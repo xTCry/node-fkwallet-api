@@ -215,13 +215,13 @@ export enum PaymentType {
 // Withdrawal
 
 /** Параметры уведомления о выводе */
-export type WithdrawalParams = {
+export type PaymentParams = {
   /** Ваш номер кошелька */
   wallet_id: string;
   /** Номер операции */
   order_id: number;
   /** Статус операции */
-  status: WithdrawalStatusType;
+  status: PaymentStatusType;
   /** Сумма */
   amount: number;
   /** Ваш номер операции */
@@ -238,7 +238,7 @@ export type WithdrawalParams = {
 };
 
 /** Статус выплаты */
-export enum WithdrawalStatusType {
+export enum PaymentStatusType {
   /** Успешно выполнен */
   Success = 1,
   /** В процессе */

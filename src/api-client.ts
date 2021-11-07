@@ -77,9 +77,9 @@ export class ApiClient {
    * @param body Объект уведомления
    * @returns {boolean} Признак валидности
    */
-  public checkSignWithdraw(body: any) {
+  public checkSignPayment(body: types.PaymentParams) {
     const compareSign = md5(
-      `${this.walletId}${body.orderId}${body.userOrderId}${body.status}${body.amount}${this.apiKey}`,
+      `${this.walletId}${body.order_id}${body.user_order_id}${body.status}${body.amount}${this.apiKey}`,
     );
 
     return body.sign === compareSign;
@@ -90,7 +90,7 @@ export class ApiClient {
    * @param body Объект уведомления
    * @returns {boolean} Признак валидности
    */
-  public checkSignCryptoTransaction(body: any) {
+  public checkSignCryptoTransaction(body: types.CryptoTransactionParams) {
     const compareSign = md5(
       `${this.walletId}${body.address}${body.transaction_id}${body.amount}${body.fee}${body.confirmations}${body.date}${this.apiKey}`,
     );
