@@ -3,8 +3,8 @@
 [![license](https://img.shields.io/npm/l/fkwallet?style=flat-square)](https://github.com/xTCry/node-fkwallet-api/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/fkwallet?style=flat-square)](https://npmjs.com/package/fkwallet)
 [![downloads](https://img.shields.io/npm/dm/fkwallet?style=flat-square)](https://npmjs.com/package/fkwallet)
-[![GitHub](https://img.shields.io/github/stars/xTCry/fkwallet?style=flat-square)](https://github.com/xTCry/node-fkwallet-api)
-[![last commit](https://img.shields.io/github/last-commit/xTCry/fkwallet?style=flat-square)](https://github.com/xTCry/node-fkwallet-api)
+[![GitHub](https://img.shields.io/github/stars/xTCry/node-fkwallet-api?style=flat-square)](https://github.com/xTCry/node-fkwallet-api)
+[![last commit](https://img.shields.io/github/last-commit/xTCry/node-fkwallet-api?style=flat-square)](https://github.com/xTCry/node-fkwallet-api)
 
 ## 📦 Установка
 
