@@ -64,7 +64,7 @@ export class ApiClient {
       case types.ActionType.CheckOnlinePayment:
         return md5(`${this.walletId}${payload.payment_id || payload.user_order_id}${this.apiKey}`);
       case types.ActionType.Transfer:
-        return md5(`${this.walletId}${payload.wallet_id}${payload.purse}${this.apiKey}`);
+        return md5(`${this.walletId}${payload.amount}${payload.purse}${this.apiKey}`);
       case types.ActionType.OnlinePayment:
         return md5(`${this.walletId}${payload.amount}${payload.account}${this.apiKey}`);
       default:
