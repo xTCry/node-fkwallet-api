@@ -294,18 +294,18 @@ export type ParamsCashout = {
   /** Сумма вывода */
   amount: number;
   /** Примечание */
-  desc: string;
+  desc?: string;
   /** Валюта для вывода */
   currency: CurrencyType;
   /** Отключить автоматический обмен */
-  disable_exchange: number | boolean;
+  disable_exchange?: number | boolean;
   /** Ваш номер операции (целое положительное число) */
   order_id?: number;
   /**
    * При указании номера операции с данным параметром, будет выдана ошибка,
    * если заявка с таким номером операции уже существует
    */
-  check_duplicate: number | boolean;
+  check_duplicate?: number | boolean;
 };
 
 export type ResponseCashout = { payment_id: string };
